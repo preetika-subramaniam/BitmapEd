@@ -1,0 +1,57 @@
+import java.io.*;
+import java.math.*;
+public class bitmapEditor
+{
+  public static void main(String[] args)throws IOException
+  {
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+	//Variable declaration
+	int r,c;String cmmnd="";
+
+	System.out.println("Enter pixel resolution to create new image");
+	r=Integer.parseInt(br.readLine());
+	c=Integer.parseInt(br.readLine());
+	String[][] pix=new String[r][c];
+  }
+
+	while(cmmnd!="Exit")
+		{
+			System.out.println("Enter your changes to the pixel in format L X Y C:");
+			cmmnd=br.readLine();
+			if(cmmnd.charAt(0)=='L')
+			{
+				colorpixel(cmmnd);
+			}
+		     if(cmmnd.charAt(0)=='C')
+ 			{
+            	cleartable();
+			}
+			else
+			    if(cmmnd.charAt(0)=='S')
+			{
+				showimage();
+			}
+         }
+                System.out.println("Reached end of main"); 
+   //end of main
+  
+               
+   void colorpixel(String cmmnd)
+               {
+                 System.out.println("Entered colorpixel");
+                 return "";
+               }
+   void cleartable()
+               {
+                 System.out.println("Entered cleartable");
+                 
+               }
+   void showimage()
+               {
+                 System.out.println("Entered showimage");
+                 
+               }
+  
+
+}
