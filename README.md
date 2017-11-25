@@ -6,3 +6,7 @@ Commands supported are:
 2. C-       Clears the table, setting all pixels to white(O),
 3. L X Y C- Colors the pixel (X,Y) with color C,
 4. S-       Shows the contents of the current image
+
+
+Physical lines of code- 188
+Logical lines of code - 111
